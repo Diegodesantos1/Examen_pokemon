@@ -144,7 +144,7 @@ class Pokemon():
             raise TypeError("The parameter weapon_type should be a WeaponType.")
 
         if isinstance(health_points, int):
-            if 1 <= health_points <= 100:
+            if 1 <= health_points <= 1000:
                 self._health_points = health_points
             else:
                 raise ValueError("The parameter health_points should be > 0 and <= 100.")
