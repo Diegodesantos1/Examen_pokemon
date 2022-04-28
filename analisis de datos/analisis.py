@@ -41,7 +41,7 @@ def graficas():
     plt.show()
     plt.bar(lista_num, lista_HP, color = "green") ; plt.ylabel("Puntos de Salud") ; plt.xlabel("Nombre") ; plt.title("Salud de los pokemon") ;  plt.axhline(y=media_hp, color="black", linestyle='solid')
     plt.show()
-graficas()
+# graficas()
 def media(datos):
     mediatotal = datos["Total"].mean() ; mediaataque = datos["Attack"].mean() ; mediadefensa = datos["Defense"].mean() ; mediahp = datos["HP"].mean()
     mediaspatk = datos["Sp. Atk"].mean() ; mediaspdef = datos["Sp. Def"].mean() ; mediaspeed = datos["Speed"].mean()
@@ -79,4 +79,7 @@ def desviacion(datos):
 desviacion(datos)
 
 def sacar_maximos():
-    lista
+    max_atq = max(lista_ataque) ; indice_ataque = lista_ataque.index(max_atq) ; ataque_max = datos.iloc[indice_ataque]
+    print(f"El pokemon con más atque es: {ataque_max}")
+
+sacar_maximos()
