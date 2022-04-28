@@ -5,9 +5,26 @@
 [Datase](https://www.kaggle.com/datasets/abcsds/pokemon)
 
 He escogido para el primer entrenador los siguientes pokemon: MewtwoMega Mewtwo X, Blissey, DeoxysSpeed Forme.
+
 Para el segundo entrenador he escogido los siguientes pokemon :MewtwoMega Mewtwo Y, Shuckle, SteelixMega Steelix.
 
-Ya que son los que tienen cada característica en su máximo, así cada entrenador tiene un equipo equilibrado, con unpokemon ofensivo, uno defensivo y luego o uno con mucha vida o muy rápido:
+Ya que son los que tienen cada característica en su máximo, así cada entrenador tiene un equipo equilibrado, con un pokemon ofensivo (tanto Mega Mewtwo X(Ataque físico) y Mega Mewtwo Y(Ataque Especial)), uno defensivo (tanto Mega Steelix(def especial) y Shuckle(def física)) y luego o uno con mucha vida (Blissey) o muy rápido (Deoxys Forma Velocidad):
+
+# Entrenador 1
+
+![image](https://user-images.githubusercontent.com/91721855/165718270-7a5d288e-bf26-4e69-896c-ed8023139e10.png)
+
+![image](https://user-images.githubusercontent.com/91721855/165718383-903c78ec-5bda-4a89-8e99-7459d111ffb1.png)
+
+![image](https://user-images.githubusercontent.com/91721855/165718551-5de3838f-412b-4fc3-932c-460f302f36e7.png)
+
+# Entrenador 2
+
+![image](https://user-images.githubusercontent.com/91721855/165718307-8d044aaa-2ea6-4fe5-a3b1-cd54d9a5173f.png)
+
+![image](https://user-images.githubusercontent.com/91721855/165718430-21e61301-409f-41ab-8395-4140282d9e3b.png)
+
+![image](https://user-images.githubusercontent.com/91721855/165718476-e772f8a4-3461-4758-96e4-e90f6abd7c6f.png)
 
 El código usado es el siguiente:
 
@@ -44,17 +61,24 @@ class Analisis:
         for i in lista_SpD:
             f += i
         media_SpD= d/len(lista_SpD)
-        plt.bar(lista_num, lista_ataque, color = "green") ; plt.ylabel("Ataque") ; plt.xlabel("Nombre") ; plt.title("Ataque de los pokemon") ; plt.axhline(y=media_ataque, color="black", linestyle='solid')
-        plt.show()
-        plt.bar(lista_num, lista_defensa, color = "green") ; plt.ylabel("Defensa") ; plt.xlabel("Nombre") ; plt.title("Defensa de los pokemon") ; plt.axhline(y=media_def, color="black", linestyle='solid')
-        plt.show()
-        plt.bar(lista_num, lista_velocidad, color = "green") ; plt.ylabel("Velocidad") ; plt.xlabel("Nombre") ; plt.title("Velocidad de los pokemon") ; plt.axhline(y=media_velocidad, color="black", linestyle='solid')
-        plt.show()
-        plt.bar(lista_num, lista_SpA, color = "green") ; plt.ylabel("Ataque Especial") ; plt.xlabel("Nombre") ; plt.title("Ataque Especial de los pokemon") ; plt.axhline(y=media_SpA, color="black", linestyle='solid')
-        plt.show()
-        plt.bar(lista_num, lista_SpD, color = "green") ; plt.ylabel("Ataque") ; plt.xlabel("Nombre") ; plt.title("Defensa Especial de los pokemon") ;  plt.axhline(y=media_SpD, color="black", linestyle='solid')
-        plt.show()
-        plt.bar(lista_num, lista_HP, color = "green") ; plt.ylabel("Puntos de Salud") ; plt.xlabel("Nombre") ; plt.title("Salud de los pokemon") ;  plt.axhline(y=media_hp, color="black", linestyle='solid')
+        plt.subplot(2,3,1)
+        plt.bar(lista_num, lista_ataque, color = "orange") ; plt.ylabel("Ataque") ; plt.xlabel("Nombre") ; plt.title("Ataque de los pokemon") ; plt.axhline(y=media_ataque, color="black", linestyle='solid', label = "media")
+        plt.legend(loc='upper right')
+        plt.subplot(2,3,2)
+        plt.bar(lista_num, lista_defensa, color = "blue") ; plt.ylabel("Defensa") ; plt.xlabel("Nombre") ; plt.title("Defensa de los pokemon") ; plt.axhline(y=media_def, color="black", linestyle='solid', label = "media")
+        plt.legend(loc='upper right')
+        plt.subplot(2,3,3)
+        plt.bar(lista_num, lista_velocidad, color = "red") ; plt.ylabel("Velocidad") ; plt.xlabel("Nombre") ; plt.title("Velocidad de los pokemon") ; plt.axhline(y=media_velocidad, color="black", linestyle='solid', label = "media")
+        plt.legend(loc='upper right')
+        plt.subplot(2,3,4)
+        plt.bar(lista_num, lista_SpA, color = "yellow") ; plt.ylabel("Ataque Especial") ; plt.xlabel("Nombre") ; plt.title("Ataque Especial de los pokemon") ; plt.axhline(y=media_SpA, color="black", linestyle='solid', label = "media")
+        plt.legend(loc='upper right')
+        plt.subplot(2,3,5)
+        plt.bar(lista_num, lista_SpD, color = "purple") ; plt.ylabel("Ataque") ; plt.xlabel("Nombre") ; plt.title("Defensa Especial de los pokemon") ;  plt.axhline(y=media_SpD, color="black", linestyle='solid', label = "media")
+        plt.legend(loc='upper right')
+        plt.subplot(2,3,6)
+        plt.bar(lista_num, lista_HP, color = "green") ; plt.ylabel("Puntos de Salud") ; plt.xlabel("Nombre") ; plt.title("Salud de los pokemon") ;  plt.axhline(y=media_hp, color="black", linestyle='solid', label = "media")
+        plt.legend(loc='upper right')
         plt.show()
     def media(datos):
         mediatotal = datos["Total"].mean() ; mediaataque = datos["Attack"].mean() ; mediadefensa = datos["Defense"].mean() ; mediahp = datos["HP"].mean()
