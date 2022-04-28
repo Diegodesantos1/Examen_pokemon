@@ -4,12 +4,12 @@ import numpy as np
 
 datos = pd.read_csv("Pokemon.csv", sep =",")
 print(datos)
+lista_ataque = list(datos["Attack"]) ; lista_num = list(datos["#"]) ; lista_tipo1 = list(datos["Type 1"])
+lista_tipo2 = list(datos["Type 2"]) ; lista_nombres = list(datos["Name"]) ; lista_total = list(datos["Total"])
+lista_HP = list(datos["HP"]) ; lista_defensa = list(datos["Defense"]) ; lista_SpA = list(datos["Sp. Atk"])
+lista_SpD = list(datos["Sp. Def"]) ; lista_velocidad = list(datos["Speed"]) ; lista_generacion = list(datos["Generation"])
+lista_legendario = list(datos["Legendary"])
 def graficas():
-    lista_ataque = list(datos["Attack"]) ; lista_num = list(datos["#"]) ; lista_tipo1 = list(datos["Type 1"])
-    lista_tipo2 = list(datos["Type 2"]) ; lista_nombres = list(datos["Name"]) ; lista_total = list(datos["Total"])
-    lista_HP = list(datos["HP"]) ; lista_defensa = list(datos["Defense"]) ; lista_SpA = list(datos["Sp. Atk"])
-    lista_SpD = list(datos["Sp. Def"]) ; lista_velocidad = list(datos["Speed"]) ; lista_generacion = list(datos["Generation"])
-    lista_legendario = list(datos["Legendary"])
     a = 0 ; b = 0 ; c = 0 ; d = 0 ; e = 0 ; f = 0 ; g = 0
     for i in lista_ataque:
         a += i
@@ -77,3 +77,6 @@ def desviacion(datos):
     desviacionhp = datos["HP"].std() ; desviacionspatk = datos["Sp. Atk"].std() ; desviacionspdef = datos["Sp. Def"].std() ; desviacionspeed = datos["Speed"].std()
     print("Desviacion estandar de la variable Total: ", desviaciontotal,"\nDesviacion estandar de la variable Attack: ", desviacionataque,"\nDesviacion estandar de la variable Defense: ", desviaciondefensa,"\nDesviacion estandar de la variable HP: ", desviacionhp,"\nDesviacion estandar de la variable Sp. Atk: ", desviacionspatk,"\nDesviacion estandar de la variable Sp. Def: ", desviacionspdef,"\nDesviacion estandar de la variable Speed: ", desviacionspeed)
 desviacion(datos)
+
+def sacar_maximos():
+    lista
