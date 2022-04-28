@@ -89,13 +89,15 @@ def sacar_maximos():
     print(f"El pokemon con más velocidad es: \n {Velocidad_max}")
 
     max_SpA = max(lista_SpA) ; indice_Spa = lista_SpA.index(max_SpA) ; spa_max = datos.iloc[indice_Spa]
-    print(f"El pokemon con más velocidad es:  \n {spa_max}")
+    print(f"El pokemon con más ataque especial es:  \n {spa_max}")
 
     max_SpD = max(lista_SpD) ; indice_Spd = lista_SpD.index(max_SpD) ; spd_max = datos.iloc[indice_Spd]
-    print(f"El pokemon con más velocidad es: \n {spd_max}")
+    print(f"El pokemon con más defensa especial es: \n {spd_max}")
 
     max_def = max(lista_defensa) ; indice_def = lista_defensa.index(max_def) ; def_max = datos.iloc[indice_def]
-    print(f"El pokemon con más velocidad es: \n {def_max}")
+    print(f"El pokemon con más defensa es: \n {def_max}")
+
+    print("\n \n Los pokemon que usaré serán: MewtwoMega Mewtwo X, Blissey, DeoxysSpeed Forme, MewtwoMega Mewtwo Y, Shuckle, SteelixMega Steelix")
 
 
 sacar_maximos()
