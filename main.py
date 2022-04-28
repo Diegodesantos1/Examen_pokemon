@@ -7,9 +7,9 @@ if __name__ == '__main__':
     if eleccion == 1:
         pass
     elif eleccion ==2:
-        datos = pnd.read_csv("imdb_sup.csv", header=0 , sep =",")
-        lista_notas = list(datos["Rating"])
-        observaciones = pnd.DataFrame({'NOTAS': lista_notas})
+        datos = pnd.read_csv("Pokemon.csv", header=0 , sep =",")
+        lista_notas = list(datos["Type"])
+        observaciones = pnd.DataFrame({'Type': lista_notas})
         #--- ANALISIS DE UNA CARACTERISTICA ---
-        stats = jmp.JMPEstadisticas(observaciones['NOTAS'])
+        stats = jmp.JMPEstadisticas(observaciones['Type'])
         stats.analisisCaracteristica()

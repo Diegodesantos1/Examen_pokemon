@@ -35,6 +35,7 @@ import csv
 import copy
 
 from modules_old.weapon_type import WeaponType
+from modules_old import pokemon
 
 
 def get_data_from_user(name_file):
