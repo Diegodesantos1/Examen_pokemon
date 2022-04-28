@@ -41,7 +41,7 @@ def graficas():
     plt.show()
     plt.bar(lista_num, lista_HP, color = "green") ; plt.ylabel("Puntos de Salud") ; plt.xlabel("Nombre") ; plt.title("Salud de los pokemon") ;  plt.axhline(y=media_hp, color="black", linestyle='solid')
     plt.show()
-# graficas()
+graficas()
 def media(datos):
     mediatotal = datos["Total"].mean() ; mediaataque = datos["Attack"].mean() ; mediadefensa = datos["Defense"].mean() ; mediahp = datos["HP"].mean()
     mediaspatk = datos["Sp. Atk"].mean() ; mediaspdef = datos["Sp. Def"].mean() ; mediaspeed = datos["Speed"].mean()
@@ -80,6 +80,22 @@ desviacion(datos)
 
 def sacar_maximos():
     max_atq = max(lista_ataque) ; indice_ataque = lista_ataque.index(max_atq) ; ataque_max = datos.iloc[indice_ataque]
-    print(f"El pokemon con más atque es: {ataque_max}")
+    print(f"El pokemon con más ataque es: \n {ataque_max}")
+
+    max_HP = max(lista_HP) ; indice_HP = lista_HP.index(max_HP) ; HP_max = datos.iloc[indice_HP]
+    print(f"El pokemon con más Puntos de Salud es: \n {HP_max}")
+
+    max_velocidad = max(lista_velocidad) ; indice_velocidad = lista_velocidad.index(max_velocidad) ; Velocidad_max = datos.iloc[indice_velocidad]
+    print(f"El pokemon con más velocidad es: \n {Velocidad_max}")
+
+    max_SpA = max(lista_SpA) ; indice_Spa = lista_SpA.index(max_SpA) ; spa_max = datos.iloc[indice_Spa]
+    print(f"El pokemon con más velocidad es:  \n {spa_max}")
+
+    max_SpD = max(lista_SpD) ; indice_Spd = lista_SpD.index(max_SpD) ; spd_max = datos.iloc[indice_Spd]
+    print(f"El pokemon con más velocidad es: \n {spd_max}")
+
+    max_def = max(lista_defensa) ; indice_def = lista_defensa.index(max_def) ; def_max = datos.iloc[indice_def]
+    print(f"El pokemon con más velocidad es: \n {def_max}")
+
 
 sacar_maximos()
