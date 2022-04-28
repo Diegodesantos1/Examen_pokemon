@@ -152,7 +152,7 @@ class Pokemon():
             raise TypeError("The parameter health_points should be a int.")
 
         if isinstance(attack_rating, int):
-            if 1 <= attack_rating <= 10:
+            if 1 <= attack_rating <= 1000:
                 self._attack_rating = attack_rating
             else:
                 raise ValueError("The parameter attack_rating should be > 0 and <= 10.")
@@ -160,7 +160,7 @@ class Pokemon():
             raise TypeError("The parameter attack_rating should be a int.")
 
         if isinstance(defense_rating, int):
-            if 1 <= defense_rating <= 10:
+            if 1 <= defense_rating <= 1000:
                 self._defense_rating = defense_rating
             else:
                 raise ValueError("The parameter defense_rating should be > 0 and <= 10.")
