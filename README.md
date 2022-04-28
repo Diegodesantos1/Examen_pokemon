@@ -4,7 +4,8 @@
 
 [Datase](https://www.kaggle.com/datasets/abcsds/pokemon)
 
-He escogido para el primer entrenador los siguientes pokemon: MewtwoMega Mewtwo X, Blissey, DeoxysSpeed Forme, MewtwoMega Mewtwo Y, Shuckle, SteelixMega Steelix.
+He escogido para el primer entrenador los siguientes pokemon: MewtwoMega Mewtwo X, Blissey, DeoxysSpeed Forme.
+Para el segundo entrenador he escogido los siguientes pokemon :MewtwoMega Mewtwo Y, Shuckle, SteelixMega Steelix.
 
 Ya que son los que tienen cada característica en su máximo, así cada entrenador tiene un equipo equilibrado, con unpokemon ofensivo, uno defensivo y luego o uno con mucha vida o muy rápido:
 
