@@ -29,17 +29,17 @@ def graficas():
     for i in lista_SpD:
         f += i
     media_SpD= d/len(lista_SpD)
-    plt.bar(lista_nombres, lista_ataque, color = "green") ; plt.ylabel("Ataque") ; plt.xlabel("Nombre") ; plt.title("Ataque de los pokemon") ; plt.axhline(y=media_ataque, color="black", linestyle='solid')
+    plt.bar(lista_num, lista_ataque, color = "green") ; plt.ylabel("Ataque") ; plt.xlabel("Nombre") ; plt.title("Ataque de los pokemon") ; plt.axhline(y=media_ataque, color="black", linestyle='solid')
     plt.show()
-    plt.bar(lista_nombres, lista_defensa, color = "green") ; plt.ylabel("Defensa") ; plt.xlabel("Nombre") ; plt.title("Defensa de los pokemon") ; plt.axhline(y=media_def, color="black", linestyle='solid')
+    plt.bar(lista_num, lista_defensa, color = "green") ; plt.ylabel("Defensa") ; plt.xlabel("Nombre") ; plt.title("Defensa de los pokemon") ; plt.axhline(y=media_def, color="black", linestyle='solid')
     plt.show()
-    plt.bar(lista_nombres, lista_velocidad, color = "green") ; plt.ylabel("Velocidad") ; plt.xlabel("Nombre") ; plt.title("Velocidad de los pokemon") ; plt.axhline(y=media_velocidad, color="black", linestyle='solid')
+    plt.bar(lista_num, lista_velocidad, color = "green") ; plt.ylabel("Velocidad") ; plt.xlabel("Nombre") ; plt.title("Velocidad de los pokemon") ; plt.axhline(y=media_velocidad, color="black", linestyle='solid')
     plt.show()
-    plt.bar(lista_nombres, lista_SpA, color = "green") ; plt.ylabel("Ataque Especial") ; plt.xlabel("Nombre") ; plt.title("Ataque Especial de los pokemon") ; plt.axhline(y=media_SpA, color="black", linestyle='solid')
+    plt.bar(lista_num, lista_SpA, color = "green") ; plt.ylabel("Ataque Especial") ; plt.xlabel("Nombre") ; plt.title("Ataque Especial de los pokemon") ; plt.axhline(y=media_SpA, color="black", linestyle='solid')
     plt.show()
-    plt.bar(lista_nombres, lista_SpD, color = "green") ; plt.ylabel("Ataque") ; plt.xlabel("Nombre") ; plt.title("defensa Especial de los pokemon") ;  plt.axhline(y=media_SpD, color="black", linestyle='solid')
+    plt.bar(lista_num, lista_SpD, color = "green") ; plt.ylabel("Ataque") ; plt.xlabel("Nombre") ; plt.title("Defensa Especial de los pokemon") ;  plt.axhline(y=media_SpD, color="black", linestyle='solid')
     plt.show()
-    plt.bar(lista_nombres, lista_HP, color = "green") ; plt.ylabel("Puntos de Salud") ; plt.xlabel("Nombre") ; plt.title("Salud de los pokemon") ;  plt.axhline(y=media_hp, color="black", linestyle='solid')
+    plt.bar(lista_num, lista_HP, color = "green") ; plt.ylabel("Puntos de Salud") ; plt.xlabel("Nombre") ; plt.title("Salud de los pokemon") ;  plt.axhline(y=media_hp, color="black", linestyle='solid')
     plt.show()
 graficas()
 def media(datos):
