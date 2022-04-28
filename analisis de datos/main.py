@@ -2,7 +2,7 @@ import pandas as pnd
 import JMPEstadisticas as jmp
 
 def analisis_estadisticas():
-    eleccion = int(input(("Qué estadística quieres ver? Elige de que stat quieres la estadística(el total(1), hp(2), attack(3), defense(4), sp.attack(5), sp.defense(6), speed(7)")))
+    eleccion = int(input(("Qué estadística quieres ver? Elige de que stat quieres la estadística(el total(1), hp(2), attack(3), defense(4), sp.attack(5), sp.defense(6), speed(7)\n")))
     if eleccion == 4:
         datos = pnd.read_csv("Pokemon.csv", header=0 , sep =",")
         lista_notas = list(datos["Defense"])
