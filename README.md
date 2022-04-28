@@ -7,7 +7,7 @@
 He escogido para el primer entrenador los siguientes pokemon: MewtwoMega Mewtwo X, Blissey, DeoxysSpeed Forme.
 Para el segundo entrenador he escogido los siguientes pokemon :MewtwoMega Mewtwo Y, Shuckle, SteelixMega Steelix.
 
-Ya que son los que tienen cada característica en su máximo, así cada entrenador tiene un equipo equilibrado, con unpokemon ofensivo, uno defensivo y luego o uno con mucha vida o muy rápido:
+Ya que son los que tienen cada característica en su máximo, así cada entrenador tiene un equipo equilibrado, con un pokemon ofensivo (tanto Mega Mewtwo X(Ataque físico) y Mega Mewtwo Y(Ataque Especial)), uno defensivo (tanto Mega Steelix(def especial) y Shuckle(def física)) y luego o uno con mucha vida (Blissey) o muy rápido (Deoxys Forma Velocidad):
 
 El código usado es el siguiente:
 
