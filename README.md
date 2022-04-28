@@ -5,21 +5,26 @@
 [Datase](https://www.kaggle.com/datasets/abcsds/pokemon)
 
 He escogido para el primer entrenador los siguientes pokemon: MewtwoMega Mewtwo X, Blissey, DeoxysSpeed Forme.
+
 Para el segundo entrenador he escogido los siguientes pokemon :MewtwoMega Mewtwo Y, Shuckle, SteelixMega Steelix.
 
 Ya que son los que tienen cada característica en su máximo, así cada entrenador tiene un equipo equilibrado, con un pokemon ofensivo (tanto Mega Mewtwo X(Ataque físico) y Mega Mewtwo Y(Ataque Especial)), uno defensivo (tanto Mega Steelix(def especial) y Shuckle(def física)) y luego o uno con mucha vida (Blissey) o muy rápido (Deoxys Forma Velocidad):
 
+# Entrenador 1
+
 ![image](https://user-images.githubusercontent.com/91721855/165718270-7a5d288e-bf26-4e69-896c-ed8023139e10.png)
 
-![image](https://user-images.githubusercontent.com/91721855/165718307-8d044aaa-2ea6-4fe5-a3b1-cd54d9a5173f.png)
-
 ![image](https://user-images.githubusercontent.com/91721855/165718383-903c78ec-5bda-4a89-8e99-7459d111ffb1.png)
+
+![image](https://user-images.githubusercontent.com/91721855/165718551-5de3838f-412b-4fc3-932c-460f302f36e7.png)
+
+# Entrenador 2
+
+![image](https://user-images.githubusercontent.com/91721855/165718307-8d044aaa-2ea6-4fe5-a3b1-cd54d9a5173f.png)
 
 ![image](https://user-images.githubusercontent.com/91721855/165718430-21e61301-409f-41ab-8395-4140282d9e3b.png)
 
 ![image](https://user-images.githubusercontent.com/91721855/165718476-e772f8a4-3461-4758-96e4-e90f6abd7c6f.png)
-
-![image](https://user-images.githubusercontent.com/91721855/165718551-5de3838f-412b-4fc3-932c-460f302f36e7.png)
 
 El código usado es el siguiente:
 
